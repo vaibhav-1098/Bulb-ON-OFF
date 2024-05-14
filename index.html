@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Bulbs-ON/OFF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head><body class="bg-slate-700">
+    <style>
+        button{
+            border: 2px solid transparent;
+        }
+        .shadow{
+            box-shadow: 0 5px 2px #000000a6;
+        }
+        .BtnDown{
+            transform: translateY(5px);
+            box-shadow: 0 0 0;
+            border: 2px solid wheat;
+        }
+        .glow{
+            box-shadow: 0 0 5rem white;
+        }
+    </style>
+<!-- START -->
+    
+<h1 class="text-center m-4 text-3xl underline text-white">Bulbs-ON/OFF</h1>
+
+<!-- bulb -->
+<div class="bulb h-48 mt-10 aspect-square rounded-full bg-slate-500 block mx-auto">
+</div>
+<img src="base.png" width="100px" class="mx-auto -translate-y-3" alt="bulb-base">
+
+<!-- buttons -->
+<div class="flex justify-center gap-5 mt-5">
+    <button class="on w-20 uppercase rounded-md bg-slate-800 p-1 font-medium text-red-400 shadow hover:bg-slate-500">Red</button>
+    <button class="on w-20 uppercase rounded-md bg-slate-800 p-1 font-medium text-yellow-500 shadow hover:bg-slate-500">Yellow</button>
+    <button class="on w-20 uppercase rounded-md bg-slate-800 p-1 font-medium text-green-500 shadow hover:bg-slate-500">Green</button>
+</div>
+
+<button class="off BtnDown w-20 uppercase rounded-md bg-slate-800 p-1 mt-4 font-medium text-white shadow block mx-auto hover:bg-slate-500">OFF</button>
+
+
+<!-- END -->
+<script src="script.js"></script>
+</body></html>
